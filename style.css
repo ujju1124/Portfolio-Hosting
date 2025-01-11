@@ -410,7 +410,8 @@
       text-decoration: none;
     }
     
-    .project h2 {
-      color: #0000FF;  /* Change to your preferred blue */
+    .project-title {
+      color: #5f605e;  /* Change to your preferred blue */
+      
     }
     
