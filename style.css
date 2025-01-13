@@ -132,7 +132,7 @@
 
   .imagebox {
     height: 250px;
-    width: 250px;
+    width: 241px;
     background-color: #79A2BC;
     border-radius: 16px;
     margin-top: -243px;
@@ -141,13 +141,13 @@
   }
 
   .imagebox:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     filter:saturate(1.2)
   }
 
   .personalimage img {
     position: relative;
-    top: -223px;
+    top: -206px;
     left: -60px;
     width: 142%;
     height: 104%;
