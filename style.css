@@ -1,43 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Baloo+2&family=Lato:ital@1&family=Nunito:wght@500&family=Oswald&family=Poppins:wght@400;700&family=Roboto:wght@500&display=swap');
 
-  body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
-    overflow-x: hidden; 
-    
-  }
+    overflow-x: hidden;
+}
 
-
-  nav {
+nav {
     background-color: #EBFEFF;
     overflow: hidden;
     padding-left: 100px;
     padding-right: 100px;
-    font-family: 'oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
     position: sticky;
     top: 0;
     z-index: 1000;
-  }
-  #logo {
+}
+
+#logo {
     float: left;
     display: block;
-    color: white;
+    color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    color: #000000;
     font-weight: bold;
     margin-right: 780px;
-    
-  }
+}
 
-  #logo:hover{
+#logo:hover {
     color: #FFFFFF;
-  }
+}
 
-  nav a {
+nav a {
     float: left;
     display: block;
     color: #000000;
@@ -47,16 +44,14 @@
     text-decoration: none;
     margin-bottom: 8px;
     transition: background-color 0.3s ease;
+}
 
-  }
+nav a:hover {
+    background-color: #457B9D;
+    color: #FFFFFF;
+}
 
-  nav a:hover{
-  background-color: #457B9D;
-  color: #FFFFFF;
-
-  }
-
-  .underline {
+.underline {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -64,48 +59,44 @@
     height: 1px;
     background-color: black;
     filter: blur(4px);
-  }
+}
 
-
-  .personalinfo {
+.personalinfo {
     background-color: #EBFEFF;
     height: 390px;
     width: 100vw;
     position: relative;
-    font-family: 'poppins', sans-serif;;
-  }
+    font-family: 'Poppins', sans-serif;
+}
 
-  .personalinfotext {
+.personalinfotext {
     padding-top: 72px;
     padding-bottom: 40px;
     padding-left: 83px;
     color: #000000;
-  }
+}
 
-  .firsttext {
+.firsttext {
     font-size: unset;
-  
-  }
+}
 
-  .secondtext {
+.secondtext {
     margin-top: -10px;
-    
-  }
+}
 
-
-  .thirdtext {
+.thirdtext {
     margin-top: -10px;
     max-width: 550px;
     font-size: large;
-  }
+}
 
-  .buttons {
+.buttons {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-  }
+}
 
-  .button {
+.button {
     background-color: #79A2BC;
     color: white;
     padding: 10px 15px;
@@ -113,24 +104,24 @@
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-  }
+}
 
-  .downloadicon img {
+.downloadicon img {
     width: 18px;
     height: 20px;
-  }
+}
 
-  .readmore {
+.readmore {
     position: absolute;
     left: 250px;
     height: 25px;
-  }
+}
 
-  .button:hover {
+.button:hover {
     background-color: #45a049;
-  }
+}
 
-  .imagebox {
+.imagebox {
     height: 267px;
     width: 250px;
     background-color: #79A2BC;
@@ -138,280 +129,240 @@
     margin-top: -243px;
     margin-left: 802px;
     transition: transform 0.3s ease;
-  }
+}
 
-  .imagebox:hover{
+.imagebox:hover {
     transform: scale(1.04);
-    filter:saturate(1.2)
-  }
+    filter: saturate(1.2);
+}
 
-  .personalimage img {
+.personalimage img {
     position: relative;
     top: -206px;
     left: -60px;
     width: 142%;
     height: 104%;
     border-radius: 16px;
-    
-  }
+}
 
-
-
-  .aboutme {
+.aboutme {
     height: 472px;
     background-color: #FFFFFF;
     width: 100vw;
     font-family: 'Poppins', sans-serif;
-  }
+}
 
-  .aboutmetext {
+.aboutmetext {
     position: relative;
     left: 706px;
     top: 61px;
     margin-top: -20px;
-  }
+}
 
-  .aboutmetext h2{
-    font-family: 'Oswald', sans-serif;;
-  }
+.aboutmetext h2 {
+    font-family: 'Oswald', sans-serif;
+}
 
-  .aboutmeimg{
-      position: absolute;
-      top: 415px;
-      left: 16px;
-  }
+.aboutmeimg {
+    position: absolute;
+    top: 415px;
+    left: 16px;
+}
 
-  .aboutmedetails{
-      max-width: 500px;
-  }
+.aboutmedetails {
+    max-width: 500px;
+}
 
-  .myskills{
-      height: 225px;
-      width: 100vw;
-      background-color: #EBFEFF;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-  }
+.myskills {
+    height: 225px;
+    width: 100vw;
+    background-color: #EBFEFF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
-  .myskills h2 {
-    font-family: 'Oswald', sans-serif;;
-      margin-top: 50px;
-      margin-left: 3px;
-  }
-  .skilllogo {
-      position: absolute;
-      top: 1043px;
-      left: 574px;
-      transition: transform 0.4s ease;
-  }
+.myskills h2 {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 50px;
+    margin-left: 3px;
+}
 
-  .skilllogo img:hover{
+.skilllogo {
+    position: absolute;
+    top: 1043px;
+    left: 574px;
+    transition: transform 0.4s ease;
+}
+
+.skilllogo img:hover {
     transform: scale(1.6);
-  }
+}
 
-  .skilllogo span img{
-      height: 50px;
-      width: 50px;
-      margin-right: 40px;
-  }
+.skilllogo span img {
+    height: 50px;
+    width: 50px;
+    margin-right: 40px;
+}
 
-  .project-container {
-      text-align: center;
-    
-    }
+.project-container {
+    text-align: center;
+}
 
+.projects {
+    background-color: #FFFFFF;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
 
+.project-container h2 {
+    margin-top: 50px;
+    font-family: 'Oswald', sans-serif;
+}
 
-    .projects {
-      background-color: #FFFFFF;
-      padding: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Poppins', sans-serif;
-      background-color: #FFFFFF;
-    
-    }
+.project {
+    margin: 0 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
 
-  
+.project:hover {
+    transform: scale(1.1);
+}
 
-    .project-container h2{
-            margin-top: 50px;
-            font-family: 'Oswald', sans-serif;
-    }
+.project img {
+    width: auto;
+    max-height: 222px;
+    border-radius: 8px;
+}
 
-    .project {
-      margin: 0 30px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
+.project-title {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
 
-    .project:hover{
-      transform: scale(1.1);
-    }
+.project-description {
+    margin-top: 10px;
+    color: #555;
+    text-decoration: none;  /* Prevents underlining */
+}
 
-    .project img {
-      width: auto;
-      max-height: 222px; 
-      border-radius: 8px;
-    }
-    
-    
+.footer {
+    height: 270px;
+    width: 100vw;
+    background-color: #EBFEFF;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+}
 
-    .project-title {
-      font-size: 1.5em;
-      margin-top: 10px;
-    }
-
-    .project-description {
-      margin-top: 10px;
-      color: #555;
-      
-    }
-
-    .footer {
-      height: 270px;
-      width: 100vw;
-      background-color: #EBFEFF;
-      display: flex;
-      flex-direction: column;
-      font-family: 'Oswald', sans-serif;
-      
-
-    }
-    
-    .contact-info {
+.contact-info {
     margin-left: 100px;
-    }
-    
-    .contact-title {
-      color: #457B9D;
-      margin-bottom: 10px;
-      margin-top: 35px;
-    }
-    
-    .contact-details {
-      font-size: 1.2em;
-      color: #555;
-    }
+}
 
-    .contact-details h1 {
-      font-size: 1.2em;
-      color: #070707;
+.contact-title {
+    color: #457B9D;
+    margin-bottom: 10px;
+    margin-top: 35px;
+}
+
+.contact-details {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.contact-details h1 {
+    font-size: 1.2em;
+    color: #070707;
     font-weight: bold;
-    }
-    
-    .social-links {
-      margin-top: 20px;
-      margin-left: 90px;
-    }
-    
-    .social-links img {
-      width: 30px;
-      height: 30px;
-      margin: 0 10px;
-      cursor: pointer;
-    }
+}
 
-    .copyright {
-      background-color: #EBFEFF;
-      text-align: center;
-      padding: 10px;
-      color: #1c1b1b;
-      font-family: 'Roboto', sans-serif;
+.social-links {
+    margin-top: 20px;
+    margin-left: 90px;
+}
 
-    }
-    
-    @media only screen and (max-width: 768px) {
-      /* Adjustments for smaller screens */
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
 
-      nav {
+.copyright {
+    background-color: #EBFEFF;
+    text-align: center;
+    padding: 10px;
+    color: #1c1b1b;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    nav {
         padding-left: 20px;
         padding-right: 20px;
-      }
+    }
 
-      #logo {
+    #logo {
         margin-right: 20px;
-      }
+    }
 
-      .personalinfo {
+    .personalinfo {
         height: auto;
-      }
+    }
 
-      .imagebox {
+    .imagebox {
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
-      }
+    }
 
-      .aboutme {
+    .aboutme {
         height: auto;
-      }
+    }
 
-      .aboutmetext {
+    .aboutmetext {
         left: 20px;
-      }
+    }
 
-      .aboutmeimg {
+    .aboutmeimg {
         display: none; /* Hide the image on smaller screens */
-      }
+    }
 
-      .myskills {
+    .myskills {
         height: auto;
         flex-direction: column;
-      }
+    }
 
-      .skilllogo {
+    .skilllogo {
         position: static;
         margin: 20px auto;
-      }
+    }
 
-      .project-container h2 {
+    .project-container h2 {
         margin-top: 20px;
-      }
+    }
 
-      .project {
+    .project {
         margin: 0 10px;
-      }
+    }
 
-      .footer {
+    .footer {
         flex-direction: column;
         height: auto;
-      }
+    }
 
-      .contact-info {
+    .contact-info {
         margin-left: 20px;
-      }
+    }
 
-      .social-links {
+    .social-links {
         margin-top: 10px;
         margin-left: 20px;
-      }
     }
+}
 
-    nav a {
-      float: left;
-      display: block;
-      color: #000000; /* Set color to black or whatever you prefer */
-      text-align: center;
-      padding: 14px 16px;
-      margin-left: 20px;
-      text-decoration: none; /* Remove underline */
-      margin-bottom: 8px;
-      transition: background-color 0.3s ease;
-    }
-    
-    nav a:hover {
-      background-color: #457B9D;
-      color: #FFFFFF;
-    }
-    
-    .project a {
-      text-decoration: none;
-    }
-    
-    .project-title {
-      color: #5f605e;  /* Change to your preferred blue */
-      
-    }
