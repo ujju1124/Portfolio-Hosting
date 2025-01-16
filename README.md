@@ -22,7 +22,7 @@ This portfolio uses the following technologies:
 **Installation**
 To run this portfolio locally on your machine, follow these steps:
 Clone the repository:
-git clone https://github.com/ujju1124/portfolio.git
+git clone https://github.com/ujju1124/Portfolio-Hosting
 Navigate into the project directory:
 cd portfolio
 Open the index.html file in your web browser to view the portfolio locally.
