@@ -9,15 +9,15 @@
 
   <nav>
     <a id="logo" href="#">Ujwal</a>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Skill</a>
-    <a href="#">Project</a>
-    <a href="#">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#aboutme">About</a>
+    <a href="#myskills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
     <div class="underline"></div>
   </nav>
 
-  <div class="personalinfo">
+  <div id="home"class="personalinfo">
     <div class="personalinfotext">
       <p class="firsttext">Hi Everyone, I am</p>
       <p class="secondtext"><h2>Ujwal Dahal</h2></p>
@@ -25,7 +25,7 @@
         I love creating responsive and user-friendly websites.</p>
       
       <div class="buttons">
-        <a href="https://drive.google.com/file/d/1WMBysO9vD0X2BI4ZaAQMdiNjzAMsB_6y/view?usp=sharing" class="button" target="_blank">Download CV  <span class="downloadicon"><img src="images/downloadicon.png" alt=""></span></a>
+        <a href="https://drive.google.com/file/d/1V2arxjvpCoglvXe68qGwOllocahslyJd/view?usp=sharing" class="button" target="_blank">Download CV  <span class="downloadicon"><img src="images/downloadicon.png" alt=""></span></a>
         <a href="#" class="button readmore">Read More</a>
       </div>
     </div>
@@ -36,7 +36,7 @@
     </div>
   </div>
 
-  <div class="aboutme">
+  <div id="aboutme"class="aboutme">
     <div class="aboutmetext">
       <h2>About Me?</h2>
       <p class="aboutmedetails">
@@ -52,7 +52,7 @@
       </div>
   </div>
 
-  <div class="myskills">
+  <div id="myskills"class="myskills">
     <h2>What I am capable of?</h2>
 
     <div class="skilllogo">
@@ -68,22 +68,24 @@
     <h2>What I have made?</h2>
   </div>
 
-  <div class="projects">
-    <!-- Project 1: Tic-Tac-Toe Game -->
-    <div class="project">
-      <a href="https://ujju1124.github.io/Tic_Tac-Toe-Host/" target="_blank">
-        <img src="images/tictactoe.png" alt="Project 1">
+  <div id="projects"class="projects">
+        <!-- Project 1: Lipsum Generator -->
+
+    <div class="project Lorem">
+      <a href="https://ujju1124.github.io/Lorem_Ipsum_Generator_Host/" target="_blank">
+        <img src="images/LoremIpsumGenerator.png" alt="Project 4">
         <div class="project-details">
-          <h3 class="project-title">Tic-Tac-Toe Game</h3>
+          <h3 class="project-title">Lorem Ipsum Generator</h3>
           <p class="project-description">
-            Experience the classic game of Tic Tac Toe in a digital format! In this interactive web application, players can choose to play as either "Player X" or "Player O."
+            This Lorem Ipsum Generator is a tool designed to create Lipsum text for designers and developers. It allows users to quickly generate random, customizable Lorem Ipsum content for use in projects, mockups, and prototypes. With a clean interface and seamless functionality, this project streamlines the process of incorporating placeholder text, enhancing workflow and efficiency.
+
           </p>
         </div>
       </a>
     </div>
 
     <!-- Project 2: Simple Analog Clock -->
-    <div class="project">
+    <div class="project analogClock">
       <a href="https://ujju1124.github.io/Analog-clock-host/" target="_blank">
         <img src="images/analogclock.png" alt="Project 2">
         <div class="project-details">
@@ -102,16 +104,31 @@
         <div class="project-details">
           <h3 class="project-title">Logo Generator</h3>
           <p class="project-description">
-            This project features the frontend design of a logo generator website, where users can input a company name or text, with the goal of generating a logo. While the backend functionality is not yet implemented, the interface is fully developed with a user-friendly layout, displaying sample logos and descriptions to demonstrate the final product’s potential.
-
+            This project features the frontend design of a logo generator website, where users can input a company name or text, with the goal of generating a logo. While the backend functionality is not yet implemented, the interface is fully developed with a user-friendly layout.
 
           </p>
         </div>
       </a>
     </div>
+        <!-- Project 4: Tic-Tac-Toe Game -->
+
+    <div class="project">
+      <a href="https://ujju1124.github.io/Tic_Tac-Toe-Host/" target="_blank">
+        <img src="images/tictactoe.png" alt="Project 1">
+        <div class="project-details">
+          <h3 class="project-title">Tic-Tac-Toe Game</h3>
+          <p class="project-description">
+            Experience the classic game of Tic Tac Toe in a digital format! In this interactive web application, players can choose to play as either "Player X" or "Player O."
+          </p>
+        </div>
+      </a>
+    </div>
+    
+  
+    
   </div>
 
-  <div class="footer">
+  <div id="contact"class="footer">
     <div class="contact-info">
       <div class="contact-title">Contacts</div>
       <div class="contact-details">
