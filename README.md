@@ -37,10 +37,13 @@ If you’d like to contribute to this project, feel free to fork the repository,
 You can get in touch with me through:
 
 Email: dahalujwal3@gmail.com
+
 LinkedIn: Ujwal Dahal
+
 GitHub: ujju1124
+
 Facebook: Ujwal Dahal
-Feel free to customize the contact information and other details according to your preferences!
+
 
 
 **Copyright**
