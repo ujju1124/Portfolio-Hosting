@@ -22,6 +22,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 52px;
 }
 
 #logo {
@@ -172,6 +173,7 @@ nav a:hover {
     position: absolute;
     top: 415px;
     left: 16px;
+    
 }
 
 .aboutmedetails {
@@ -227,12 +229,23 @@ nav a:hover {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    grid-template-areas: "Lorem analogclock LogoLoom" "Tic-Tac-Toe Font_Converter Font_Converter";
+
     justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
+    align-items:baseline;
     font-family: 'Poppins', sans-serif;
-    
+    padding: 0px 74px 40px 74px;    
 }
+
+.projects div {
+    /* text-align: center; */
+    /* padding: 15px; */
+   
+    border-radius: 30px;
+    /* background-color:#f7fbfb; */
+    transition: transform 0.3s ease;
+  }
 
 .project-container h2 {
     margin-top: 50px;
@@ -242,15 +255,23 @@ nav a:hover {
 .project {
     text-align: center;
     padding: 10px;
-    width: 392px;
+    width: 396px;
     margin: 13px;
     text-align: center;
     transition: transform 0.3s ease;
+    overflow: hidden;
+    box-shadow: 6.5px 8.5px 18px rgba(0, 0, 0,0.1);
+    position: relative;
+
+}
+.project-details{
+    padding: 16px;
+  position: relative; /* Ensure the button is positioned relative to this container */
 }
 
 .project a {
     text-decoration: none;
-    color: inherit;
+    /* color: inherit; */
 }
 
 .project a:hover {
@@ -258,18 +279,22 @@ nav a:hover {
 }
 
 .project:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .project img {
-    width: auto;
-    max-height: 222px;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+    /* max-height: 222px; */
     border-radius: 30px;
 }
 
 .project-title {
     font-size: 1.5em;
     margin-top: 10px;
+    color:#088a91
 }
 
 .project-description {
@@ -277,14 +302,38 @@ nav a:hover {
     color: #555;
     text-decoration: none;
     text-overflow: ellipsis;
+    box-shadow: none !important; /* Reset box-shadow for inner elements */
+    margin-bottom: 35px;
+
     
 }
 
-.analogClock{
+/* .analogClock{
     padding-bottom: 102px;
 
-}
+} */
 
+.live-view {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px; /* Rounded corners */
+   
+  }
+  
+  .live-view:hover {
+    background-color: #6be975; /* Darker blue on hover */
+    color: #fff;
+    text-decoration: none;
+  }
 
 
 .footer {
@@ -384,9 +433,11 @@ nav a:hover {
     }
 
     .project {
-        margin: 0 10px;
+        width: 150px; /* Reduce width for smaller screens */
+        height: 150px; /* Reduce height accordingly */
     }
-
+       
+    
     .footer {
         flex-direction: column;
         height: auto;
