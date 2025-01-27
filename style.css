@@ -10,8 +10,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-  }
-  
+}
 
 nav {
     background-color: #EBFEFF;
@@ -387,31 +386,117 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+    body, html {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        width: 100%; /* Ensure full width usage */
+    }
+
     nav {
         padding-left: 20px;
         padding-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow:overlay;
+        gap:16px;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: #000;
+        padding: 14px 16px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box; /* Include padding and border in the element's width */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        text-align: left;
+        padding-left: 20px; /* Adjust padding to fit within the viewport */
+        box-sizing: border-box; /* Include padding and border in the element's width */
     }
 
     #logo {
-        margin-right: 20px;
+        margin-right: auto;
     }
 
+    .personalinfotext {
+        left: auto;
+        top: auto;
+        margin: 20px;
+        text-align: center;
+        width: 100%; /* Ensure full width usage */
+        box-sizing: border-box; /* Include padding and border in the element's width */
+        margin-left: -30px;
+
+    }
+
+    .readmore {
+        display: none;
+    }
+    
     .personalinfo {
         height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 35px 34px;
+        width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        box-sizing: border-box; /* Include padding and border in the element's width */
     }
 
     .imagebox {
-        margin-top: 20px;
+        display: none;
+        margin-top: 62px; /* Increased margin-top to move image lower */
         margin-left: auto;
         margin-right: auto;
+        width: 250px;
+        background-color: #79A2BC;
+        border-radius: 16px;
+        transition: transform 0.3s ease;
+
+    }
+
+    .buttons {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Add gap between buttons */
     }
 
     .aboutme {
         height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 20px;
+        width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        box-sizing: border-box; /* Include padding and border in the element's width */
     }
 
     .aboutmetext {
-        left: 20px;
+        left: auto;
+        top: auto;
+        margin: 20px;
+        text-align: center;
+        width: 100%; /* Ensure full width usage */
+        box-sizing: border-box; /* Include padding and border in the element's width */
     }
 
     .aboutmeimg {
@@ -421,34 +506,77 @@ nav a:hover {
     .myskills {
         height: auto;
         flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+        width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        box-sizing: border-box; /* Include padding and border in the element's width */
     }
 
     .skilllogo {
         position: static;
-        margin: 20px auto;
+        margin: 25px 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px; /* Ensure logos align horizontally */
+        width: 100%; /* Ensure full width usage */
+        box-sizing: border-box; /* Include padding and border in the element's width */
+    }
+
+    .project-container {
+        text-align: center;
+        display: flex;
+        justify-content: center; /* Center heading */
+        margin-top: 20px;
+        width: 100%; /* Ensure full width usage */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        box-sizing: border-box; /* Include padding and border in the element's width */
     }
 
     .project-container h2 {
-        margin-top: 20px;
+        margin: 0 auto; /* Center heading */
+    }
+
+    .projects {
+        background-color: #FFFFFF;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        font-family: 'Poppins', sans-serif;
+        width: 100%; /* Ensure full width usage */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        box-sizing: border-box; /* Include padding and border in the element's width */
+
     }
 
     .project {
-        width: 150px; /* Reduce width for smaller screens */
-        height: 150px; /* Reduce height accordingly */
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box; /* Include padding and border in the element's width */
     }
-       
-    
+
     .footer {
         flex-direction: column;
         height: auto;
+        width: 100%; /* Ensure full width usage */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        box-sizing: border-box; /* Include padding and border in the element's width */
     }
 
     .contact-info {
         margin-left: 20px;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .social-links {
         margin-top: 10px;
         margin-left: 20px;
+        display: flex;
+        justify-content: center;
     }
 }
+
