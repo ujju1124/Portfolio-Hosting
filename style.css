@@ -142,10 +142,10 @@ nav a:hover {
 }
 
 .personalimage img {
-    position: relative;
-    top: -206px;
-    left: -60px;
-    width: 142%;
+     position: relative;
+    top: -90px;
+    left: -21px;
+    width: 107%;
     height: 104%;
     border-radius: 16px;
 }
