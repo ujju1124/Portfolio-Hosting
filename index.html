@@ -1,181 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujwal Dahal - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 <body>
+    <header class="sticky-header">
+        <nav class="container">
+            <a href="#" class="logo">Ujwal Dahal</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About Me</a>
+                <a href="#skills" class="nav-item">My Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#contact" class="nav-item">Contact Me</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span class="menu-icon">&#9776;</span>
+            </button>
+        </nav>
+    </header>
 
-  <nav>
-    <a id="logo" href="#">Ujwal</a>
-    <a href="#home">Home</a>
-    <a href="#aboutme">About</a>
-    <a href="#myskills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <div class="underline"></div>
-  </nav>
+    <main>
+        <section id="home" class="hero">
+            <div id="particles-js"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="typing-effect">Hi, I'm Ujwal Dahal</h1>
+                    <p class="hero-subtitle">A passionate web developer focused on delivering high quality, innovative web solutions.
+                    </p>
+                    <div class="button-group">
+                        <a href="https://drive.google.com/file/d/1eAXYLwwr3G9yrM0rQSl9zB7ljnbc9GdO/view?usp=sharing" download class="button primary">View CV</a>
+                        <a href="#about" class="button secondary">Read More</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
+                        <img src="images/myprofilepic.jpg" alt="Ujwal Dahal" class="profile-pic">
+                    </div>
+                    <div class="hero-shape"></div>
+                    <div class="hero-shape-2"></div>
+                </div>
+            </div>
+        </section>
 
-  <div id="home"class="personalinfo">
-    <div class="personalinfotext">
-      <p class="firsttext">Hi Everyone, I am</p>
-      <p class="secondtext"><h2>Ujwal Dahal</h2></p>
-      <p class="thirdtext">I am a passionate web developer with experience in HTML, CSS, and JavaScript.
-        I love creating responsive and user-friendly websites.</p>
-      
-      <div class="buttons">
-        <a href="https://drive.google.com/file/d/1eAXYLwwr3G9yrM0rQSl9zB7ljnbc9GdO/view?usp=sharing" class="button" target="_blank">Download CV  <span class="downloadicon"><img src="images/downloadicon.png" alt=""></span></a>
-        <a href="#" class="button readmore">Read More</a>
-      </div>
-    </div>
-    <div class="imagebox">
-      <div class="personalimage">
-        <img src="images/profilepic.png" alt="my pic">
-      </div>
-    </div>
-  </div>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p class="AboutMe">Hi! I'm Ujwal Dahal, a dedicated web developer driven by a passion for designing visually stunning, highly functional, and user-focused digital solutions. With expertise in cutting-edge web development tools and a commitment to staying ahead of emerging technologies, I strive to deliver innovative websites that combine aesthetic appeal with flawless performance. My mission is to create seamless, engaging user experiences that work effortlessly.</p>
+            </div>
+        </section>
 
-  <div id="aboutme"class="aboutme">
-    <div class="aboutmetext">
-      <h2>About Me?</h2>
-      <p class="aboutmedetails">
-        Hello, I'm Ujwal Dahal, a friendly web developer here to make the internet a more awesome place. I use my skills in HTML, CSS, and JavaScript to create websites that not only work smoothly but also look really cool.
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="HTML">
+                        <i class="fab fa-html5 fa-3x"></i>
+                        <h3>HTML</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="CSS">
+                        <i class="fab fa-css3-alt fa-3x"></i>
+                        <h3>CSS</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="JavaScript">
+                        <i class="fab fa-js fa-3x"></i>
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="React">
+                        <i class="fab fa-react fa-3x"></i>
+                        <h3>React</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                    </div>
+                    <div class="skill-item" data-skill="Node.js">
+                        <i class="fab fa-node-js fa-3x"></i>
+                        <h3>Node.js</h3>
+                        <div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        I'm a bit of a tech enthusiast, always eager to learn about the latest trends. Teamwork is my jam, and I love collaborating with different people to turn creative ideas into reality. Besides coding, you might find me geeking out over new tech, staying updated on design trends, and enjoying a good cup of coffee while brainstorming exciting ideas.
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="images/LoremIpsumGenerator.png" alt="Lorem Ipsum Generator">
+                        </div>
+                        <div class="project-info">
+                            <h3>Lorem Ipsum Generator</h3>
+                            <p>A quick, customizable tool for designers and developers to generate filler text, enhancing workflow in projects, mockups, and prototypes.</p>
+                            <a href="https://ujwaldahal.com.np/lipsumgenerator" target="_blank" class="button">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="images/dynamicfontconverternew.png" alt="Dynamic Font Converter">
+                        </div>
+                        <div class="project-info">
+                            <h3>Dynamic Font Converter</h3>
+                            <p>An interactive web app for customizing text with Google Fonts, allowing real-time previews while ensuring font consistency across platforms.</p>
+                            <a href="https://ujwaldahal.com.np/dynamicfontconverter" target="_blank" class="button">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="images/logoloomnew.png" alt="Logo Generator">
+                        </div>
+                        <div class="project-info">
+                            <h3>Logo Generator</h3>
+                            <p>A fully designed interface where users input a company name to generate a logo, though backend functionality is yet to be implemented.</p>
+                            <a href="https://ujju1124.github.io/Landing-page-host/" target="_blank" class="button">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="images/analogclocknew.png" alt="Simple Analog Clock">
+                        </div>
+                        <div class="project-info">
+                            <h3>Simple Analog Clock</h3>
+                            <p> A stylish HTML & CSS clock displaying time elegantly, adding creativity and charm to digital spaces.It smoothly animates the clock hands for a realistic timekeeping experience.</p>
+                            <a href="https://ujju1124.github.io/Analog-clock-host/" target="_blank" class="button">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        I'm all about making the digital world fun and user-friendly. Let's connect and explore the wonders of the internet together!
-      </p>
-    </div>
-    <div class="aboutmeimg">
-        <img src="images/aboutme.png" alt="aboutme">
-      </div>
-  </div>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="button primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-  <div id="myskills"class="myskills">
-    <h2>What I am capable of?</h2>
-
-    <div class="skilllogo">
-        <span><img src="images/html.png" alt="html"></span>
-        <span><img src="images/css.png" alt="html"></span>
-        <span><img src="images/bootstrap.png" alt="html"></span>
-        <span><img src="images/python.png" alt="html"></span>
-        <span><img src="images/django.png" alt="html"></span>
-    </div>
-  </div>
-
-  <div class="project-container">
-    <h2>What I have made?</h2>
-  </div>
-
-  <div id="projects"class="projects">
-        <!-- Project 1: Lipsum Generator -->
-
-    <div class="project Lorem">
-        <img src="images/LoremIpsumGenerator.png" alt="Project 4">
-        <div class="project-details">
-          <h3 class="project-title">Lorem Ipsum Generator</h3>
-          <p class="project-description">
-            This Lorem Ipsum Generator quickly creates customizable lorem text for designers and developers. Ideal for use in projects, mockups, and prototypes, it offers a user-friendly interface and seamless functionality, simplifying the process of adding filler text and improving workflow efficiency.
-          </p>
-          <a class="live-view" href="https://ujwaldahal.com.np/lipsumgenerator" target="_blank">Live View &#8599;</a>
-
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Ujwal Dahal. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ujwal-dahal-989049295/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ujju1124" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/share/1FDd4dTib5/" class="social-link"><i class="fab fa-facebook"></i></a>
+            </div>
         </div>
+    </footer>
 
-    </div>
-
-    <!-- Project 2: Simple Analog Clock -->
-    <div class="project analogClock">
-        <img src="images/analogclock.png" alt="Project 2">
-        <div class="project-details">
-          <h3 class="project-title">Simple Analog Clock</h3>
-          <p class="project-description">
-            Experience time in motion with my animated analog clock project. Designed with HTML and CSS, it showcases a sleek and stylish clock that elegantly displays the time while adding a touch of charm and creativity to any digital space.
-          </p>
-          <a class="live-view" href="https://ujju1124.github.io/Analog-clock-host/" target="_blank">Live View &#8599;</a>
-
-        </div>
-
-    </div>
-
-    <!-- Project 3: Simple Logo maker Website -->
-    <div class="project LogoLoom">
-        <img src="images/LogoLoom.png" alt="Project 3">
-        <div class="project-details">
-          <h3 class="project-title">Logo Generator</h3>
-          <p class="project-description">
-            This project showcases the frontend design of a logo generator website. Users can input a company name or text to generate a logo. Though the backend functionality is not yet implemented, the interface is fully developed with an intuitive and user-friendly layout.
-          </p>
-          <a class="live-view" href="https://ujju1124.github.io/Landing-page-host/" target="_blank">Live View &#8599;</a>
-
-        </div>
-
-    </div>
-        <!-- Project 4: Tic-Tac-Toe Game -->
-
-    <div class="project Tic-Tac-Toe">
-        <img src="images/tictactoe.png" alt="Project 1">
-        <div class="project-details">
-          <h3 class="project-title">Tic-Tac-Toe Game</h3>
-          <p class="project-description">
-            Experience the classic game of Tic Tac Toe in a digital format! This interactive web application lets players engage in a fun and simple game of Tic Tac Toe. The game features a clean design and responsive interface for an enjoyable experience.
-          </p>
-          <a class="live-view" href="https://ujwaldahal.com.np/tictactoe" target="_blank">Live View &#8599;</a>
-
-        </div>
-        
-
-    </div>
-
-    <div class="project Font_Converter">
-        <img src="images/FontConverter.png" alt="Project 4">
-        <div class="project-details">
-          <h3 class="project-title">Font Converter</h3>
-          <p class="project-description">
-            This interactive web application lets users style text with custom fonts, weights, and styles from Google Fonts. Users can preview their styled text in real-time. It preserves font aesthetics across platforms, demonstrating seamless integration of the Google Fonts API for practical use in projects.
-          </p>
-          <a class="live-view" href="https://ujwaldahal.com.np/dynamicfontconverter" target="_blank">Live View &#8599;</a>
-
-        </div>
-
-    </div>
-
-    <!-- <div class="project Font_Converter">
-        <img src="images/FontConverter.png" alt="Project 4">
-        <div class="project-details">
-          <h3 class="project-title">Font Converter</h3>
-          <p class="project-description">
-            This interactive web application lets users style text with custom fonts, weights, and styles from Google Fonts. Users can preview their styled text in real-time. It preserves font aesthetics across platforms, demonstrating seamless integration of the Google Fonts API for practical use in projects.
-          </p>
-          <a class="live-view" href="https://ujju1124.github.io/Font_Converter_Host/" target="_blank">Live View &#8599;</a>
-
-        </div>
-
-    </div> -->
-    
-  
-    
-  </div>
-
-  <div id="contact"class="footer">
-    <div class="contact-info">
-      <div class="contact-title">Contacts</div>
-      <div class="contact-details">
-        <h1>Get in touch</h1>
-        <p>dahalujwal3@gmail.com</p>
-      </div>
-    </div>
-  
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/ujwal-dahal-989049295/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
-      <a href="https://github.com/ujju1124/CODSOFT" target="_blank"><img src="images/github.png" alt="GitHub"></a>
-      <a href="https://www.facebook.com/ujwal.dahal.718" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
-    </div>
-  </div>
-  
-  <div class="copyright">
-    <p>&copy; 2023 Ujwal Dahal. All rights reserved.</p>
-  </div>
-
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
