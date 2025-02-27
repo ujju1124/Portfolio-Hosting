@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ujwal Dahal - Web Developer Portfolio</title>
+    <title>Ujwal Dahal - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 <body>
+    <!-- Background shapes -->
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+
     <header class="sticky-header">
         <nav class="container">
             <a href="#" class="logo">Ujwal Dahal</a>
@@ -33,24 +37,59 @@
                     <p class="hero-subtitle">A passionate web developer focused on delivering high quality, innovative web solutions.
                     </p>
                     <div class="button-group">
-                        <a href="https://drive.google.com/file/d/1eAXYLwwr3G9yrM0rQSl9zB7ljnbc9GdO/view?usp=sharing" download class="button primary">View CV</a>
-                        <a href="#about" class="button secondary">Read More</a>
+                        <a href="https://drive.google.com/file/d/1eAXYLwwr3G9yrM0rQSl9zB7ljnbc9GdO/view?usp=sharing" download class="button primary">
+                            <i class="fas fa-download"></i> View CV
+                        </a>
+                        <a href="#about" class="button secondary">
+                            <i class="fas fa-arrow-down"></i> Read More
+                        </a>
                     </div>
                 </div>
                 <div class="hero-image-container">
-                    <div class="hero-image-wrapper">
-                        <img src="images/myprofilepic.jpg" alt="Ujwal Dahal" class="profile-pic">
+                    <div class="developer">
+                        <div class="dev-head">
+                            <div class="dev-mind"><span class="tag">&lt;mind&gt;</span>Creative<span class="tag">&lt;/mind&gt;</span></div>
+                            <div class="dev-eyes"><span class="tag">&lt;eyes&gt;</span>Detail-oriented<span class="tag">&lt;/eyes&gt;</span></div>
+                        </div>
+                        <div class="dev-body">
+                            <div class="dev-heart"><span class="tag">&lt;heart&gt;</span>Passionate<span class="tag">&lt;/heart&gt;</span></div>
+                            <div class="dev-hands"><span class="tag">&lt;hands&gt;</span>Skilled<span class="tag">&lt;/hands&gt;</span></div>
+                        </div>
                     </div>
-                    <div class="hero-shape"></div>
-                    <div class="hero-shape-2"></div>
-                </div>
             </div>
         </section>
 
         <section id="about" class="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p class="AboutMe">Hi! I'm Ujwal Dahal, a dedicated web developer driven by a passion for designing visually stunning, highly functional, and user-focused digital solutions. With expertise in cutting-edge web development tools and a commitment to staying ahead of emerging technologies, I strive to deliver innovative websites that combine aesthetic appeal with flawless performance. My mission is to create seamless, engaging user experiences that work effortlessly.</p>
+            <div class="container about-container">
+                <div class="about-content">
+                    <h2 class="about-title">About Me</h2>
+                    <p class="about-text">Hi! I'm Ujwal Dahal, an aspiring web developer with a passion for creating engaging and functional websites. I'm at the beginning of my journey in web development, eager to learn and grow in this exciting field.</p>
+                    <p class="about-text">As a beginner, I'm constantly exploring new technologies and techniques to improve my skills. I'm committed to building a strong foundation in web development and creating projects that not only look great but also provide value to users.</p>
+                    <p class="about-text">My goal is to evolve into a skilled developer who can bring creative ideas to life through code, always focusing on user experience and clean, efficient solutions.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Learning new technologies</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Building responsive websites</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <span>Collaborating on projects</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image-container">
+                    <div class="about-image-wrapper">
+                        <img src="images/myprofilepic.jpg" alt="Ujwal Dahal" class="about-image">
+                        <div class="about-image-overlay"></div>
+                    </div>
+                    <div class="about-image-text">Web Developer</div>
+                </div>
             </div>
         </section>
 
@@ -91,54 +130,112 @@
             <div class="container">
                 <h2>My Projects</h2>
                 <div class="projects-grid">
-                    <div class="project-item">
+                    <div class="project-item" data-project-id="project1">
                         <div class="project-image">
                             <img src="images/LoremIpsumGenerator.png" alt="Lorem Ipsum Generator">
                         </div>
                         <div class="project-info">
                             <h3>Lorem Ipsum Generator</h3>
-                            <p>A quick, customizable tool for designers and developers to generate filler text, enhancing workflow in projects, mockups, and prototypes.</p>
-                            <a href="https://ujwaldahal.com.np/lipsumgenerator" target="_blank" class="button">View Project</a>
+                            <p>A quick, customizable tool for designers and developers to generate filler text for mockups and prototypes.</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="project-button more-info" data-project-id="project1">
+                                <i class="fas fa-info-circle" style="    margin-right: 0.5rem;"></i> More Info
+                            </a>
+                            <a href="https://ujwaldahal.com.np/lipsumgenerator" target="_blank" class="project-button try-now">
+                                <i class="fas fa-external-link-alt" style="    margin-right: 0.5rem;"></i> Try Now
+                            </a>
                         </div>
                     </div>
-                    <div class="project-item">
+                    <div class="project-item" data-project-id="project2">
                         <div class="project-image">
                             <img src="images/dynamicfontconverternew.png" alt="Dynamic Font Converter">
                         </div>
                         <div class="project-info">
                             <h3>Dynamic Font Converter</h3>
-                            <p>An interactive web app for customizing text with Google Fonts, allowing real-time previews while ensuring font consistency across platforms.</p>
-                            <a href="https://ujwaldahal.com.np/dynamicfontconverter" target="_blank" class="button">View Project</a>
+                            <p>An interactive web app for customizing text with Google Fonts, allowing real-time previews and font exploration.</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="project-button more-info" data-project-id="project2">
+                                <i class="fas fa-info-circle" style="    margin-right: 0.5rem;"></i> More Info
+                            </a>
+                            <a href="https://ujwaldahal.com.np/dynamicfontconverter" target="_blank" class="project-button try-now">
+                                <i class="fas fa-external-link-alt" style="    margin-right: 0.5rem;"></i> Try Now
+                            </a>
                         </div>
                     </div>
-                    <div class="project-item">
+                    <div class="project-item" data-project-id="project3">
                         <div class="project-image">
-                            <img src="images/medisearchpro.png"alt="Logo Generator">
+                            <img src="images/medisearchpro.png" alt="MediSearch Pro">
                         </div>
                         <div class="project-info">
                             <h3>MediSearch Pro</h3>
-                            <p>This web app lets users fetch medicine details by name or image, using Tesseract.js for text extraction and the OpenPDA API for descriptions.
-                            </p>
-                            <a href="https://medicine-info-frontend.vercel.app/" target="_blank" class="button">View Project</a>
+                            <p>A web app for fetching medicine details by name or image, using advanced OCR technology and medical APIs.</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="project-button more-info" data-project-id="project3">
+                                <i class="fas fa-info-circle" style="    margin-right: 0.5rem;" ></i> More Info
+                            </a>
+                            <a href="https://medicine-info-frontend.vercel.app/" target="_blank" class="project-button try-now">
+                                <i class="fas fa-external-link-alt" style="    margin-right: 0.5rem;"></i> Try Now
+                            </a>
                         </div>
                     </div>
-                    <div class="project-item">
+                    <div class="project-item" data-project-id="project4">
                         <div class="project-image">
                             <img src="images/analogclocknew.png" alt="Simple Analog Clock">
                         </div>
                         <div class="project-info">
                             <h3>Simple Analog Clock</h3>
-                            <p> A stylish HTML & CSS clock displaying time elegantly, adding creativity and charm to digital spaces.It smoothly animates the clock hands for a realistic timekeeping experience.</p>
-                            <a href="https://ujju1124.github.io/Analog-clock-host/" target="_blank" class="button">View Project</a>
+                            <p>A stylish HTML & CSS clock displaying time elegantly with smooth animations and customizable styling.</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="project-button more-info" data-project-id="project4">
+                                <i class="fas fa-info-circle" style="    margin-right: 0.5rem;"></i> More Info
+                            </a>
+                            <a href="https://ujju1124.github.io/Analog-clock-host/" target="_blank" class="project-button try-now">
+                                <i class="fas fa-external-link-alt" style=" margin-right: 0.5rem;"></i> Try Now
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Project Details Modal -->
+        <div class="modal" id="projectModal">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">&times;</button>
+                <h3 class="modal-title" id="modalTitle"></h3>
+                <p class="modal-description" id="modalDescription"></p>
+            </div>
+        </div>
+
         <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt" style="    margin-right: 0.5rem;"></i>
+                            <span>Kathmandu, Nepal</span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope" style="    margin-right: 0.5rem;"></i>
+                            <span>dahalujwal3@gmail.com</span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone" style="    margin-right: 0.5rem;"></i>
+                            <span>+977 9865126433</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ujwal-dahal-989049295/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/ujju1124" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/share/1FDd4dTib5/" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -152,19 +249,28 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
-                    <button type="submit" class="button primary">Send Message</button>
+                    <button type="submit" class="button primary">
+                        <i class="fas fa-paper-plane"style="    margin-right: 0.5rem;"></i> Send Message
+                    </button>
                 </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2023 Ujwal Dahal. All rights reserved.</p>
+        <!-- <div class="footer-shape footer-shape-1"></div>
+        <div class="footer-shape footer-shape-2"></div> -->
+        
+        <div class="container footer-content">
+    
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/ujwal-dahal-989049295/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/ujwal-dahal-989049295/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/ujju1124" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="https://www.facebook.com/share/1FDd4dTib5/" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/share/1FDd4dTib5/" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Ujwal Dahal. All rights reserved.</p>
             </div>
         </div>
     </footer>
